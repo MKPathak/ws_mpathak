@@ -1,5 +1,7 @@
 {
   "name" : "Campaign",
   "type" : "page",
-  "controller" : "AppC"
+  "displayName" : "Campaign Template",
+  "controller" : "AppC",
+  "cssClass" : "trillo-container"
 }

@@ -1,7 +1,7 @@
 [
     {
       "appTemplate" : "webapp",
-      "blank" : true,
+      "blank" : false,
       "description" : "Campaign Builder ",
       "displayName" : "Campaign",
       "htmlHeadTitle" : "Campaign",
