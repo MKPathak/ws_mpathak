@@ -1,0 +1,17 @@
+[
+    {
+      "appTemplate" : "webapp",
+      "blank" : true,
+      "description" : "Campaign Builder ",
+      "displayName" : "Campaign",
+      "htmlHeadTitle" : "Campaign",
+      "linkedApp" : "shared",
+      "name" : "Campaign",
+      "requiredRoles" : "none",
+      "trilloVersion" : "2.0",
+      "useTestData" : true,
+      "usingEnumsCatalog" : true,
+      "usingStringFiles" : true,
+      "usingViewSpecs" : true
+    }
+  ]
