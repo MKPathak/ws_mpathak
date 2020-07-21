@@ -1,0 +1,51 @@
+{
+    "name" : "campaignToCPlan",
+    "attributes" : [
+      {
+        "name" : "id",
+        "type" : "biginteger",
+        "persistent" : true,
+        "primaryKey" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "createdAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "updatedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deleted",
+        "type" : "boolean",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deletedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "campaign_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "client_plan_id",
+        "type" : "biginteger",
+        "persistent" : true
+      }
+    ],
+    "displayName" : "campaign_to_client_plan",
+    "deleteAllBeforeSync" : false,
+    "nameInDS" : "campaignToCPlan_tbl",
+    "primaryKeyGenerator" : "serial",
+    "tableCreateable" : true
+  }

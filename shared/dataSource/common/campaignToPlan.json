@@ -1,0 +1,65 @@
+{
+    "name" : "campaignToPlan",
+    "attributes" : [
+      {
+        "name" : "id",
+        "type" : "biginteger",
+        "persistent" : true,
+        "primaryKey" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "createdAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "updatedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deleted",
+        "type" : "boolean",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deletedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "campaign_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "plan_library_id",
+        "type" : "biginteger",
+        "persistent" : true
+      }
+    ],
+    "associations" : [
+      {
+        "name" : "campaign_id",
+        "class2Name" : "campaign",
+        "type" : "MANY_TO_ONE",
+        "dir" : "CLS1_TO_CLS2",
+        "attrMapping" : {
+          "class2Attr" : "id",
+          "myAttr" : "campaign_id"
+        },
+        "size" : 10,
+        "start" : 1
+      }
+    ],
+    "displayName" : "campaign_to_plan_library",
+    "deleteAllBeforeSync" : false,
+    "nameInDS" : "campaignToPlan_tbl",
+    "primaryKeyGenerator" : "serial",
+    "tableCreateable" : true
+  }
