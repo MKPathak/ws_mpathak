@@ -9,6 +9,16 @@
         "systemAttr" : true
       },
       {
+        "name" : "campaign_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "client_plan_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
         "name" : "createdAt",
         "type" : "biginteger",
         "persistent" : true,
@@ -31,16 +41,6 @@
         "type" : "biginteger",
         "persistent" : true,
         "systemAttr" : true
-      },
-      {
-        "name" : "campaign_id",
-        "type" : "biginteger",
-        "persistent" : true
-      },
-      {
-        "name" : "client_plan_id",
-        "type" : "biginteger",
-        "persistent" : true
       }
     ],
     "displayName" : "campaign_to_client_plan",

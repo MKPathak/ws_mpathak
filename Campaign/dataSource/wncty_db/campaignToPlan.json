@@ -9,6 +9,16 @@
         "systemAttr" : true
       },
       {
+        "name" : "campaign_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "plan_library_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
         "name" : "createdAt",
         "type" : "biginteger",
         "persistent" : true,
@@ -31,27 +41,17 @@
         "type" : "biginteger",
         "persistent" : true,
         "systemAttr" : true
-      },
-      {
-        "name" : "campaign_id",
-        "type" : "biginteger",
-        "persistent" : true
-      },
-      {
-        "name" : "plan_library_id",
-        "type" : "biginteger",
-        "persistent" : true
       }
     ],
     "associations" : [
       {
-        "name" : "campaign_id",
+        "name" : "campaing_id",
         "class2Name" : "campaign",
         "type" : "MANY_TO_ONE",
         "dir" : "CLS1_TO_CLS2",
         "attrMapping" : {
           "class2Attr" : "id",
-          "myAttr" : "campaign_id"
+          "myAttr" : "campaing_id"
         },
         "size" : 10,
         "start" : 1

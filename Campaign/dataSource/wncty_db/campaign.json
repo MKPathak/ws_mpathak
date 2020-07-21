@@ -1,0 +1,204 @@
+{
+    "name" : "campaign",
+    "attributes" : [
+      {
+        "name" : "id",
+        "type" : "biginteger",
+        "persistent" : true,
+        "primaryKey" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "createdAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "updatedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deleted",
+        "type" : "boolean",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "deletedAt",
+        "type" : "biginteger",
+        "persistent" : true,
+        "systemAttr" : true
+      },
+      {
+        "name" : "campaign_parent_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_title",
+        "type" : "string",
+        "persistent" : true
+      },
+      {
+        "name" : "client_plan_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "plan_library_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "user_profile_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "client_id",
+        "type" : "biginteger",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_description",
+        "type" : "longstring",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_is_active",
+        "type" : "boolean",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_start_date",
+        "type" : "date",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_end_date",
+        "type" : "date",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_close_date",
+        "type" : "date",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_goal_location",
+        "type" : "boolean",
+        "persistent" : true
+      },
+      {
+        "name" : "campaign_enable_cases",
+        "type" : "boolean",
+        "persistent" : true
+      }
+    ],
+    "displayName" : "campaign",
+    "deleteAllBeforeSync" : false,
+    "nameInDS" : "campaign_tbl",
+    "primaryKeyGenerator" : "serial",
+    "routeSpecs" : [
+      {
+        "location" : "/ds/delete/Campaign/wncty_db/campaign",
+        "path" : "/ds/delete/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/deleteAll/Campaign/wncty_db/campaign",
+        "path" : "/ds/deleteAll/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/deleteByQuery/Campaign/wncty_db/campaign",
+        "path" : "/ds/deleteByQuery/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/object/Campaign/wncty_db/campaign",
+        "path" : "/ds/object/Campaign/wncty_db/campaign",
+        "roles" : "user,admin,manager",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/objectwithassociation/Campaign/wncty_db/campaign",
+        "path" : "/ds/objectwithassociation/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/objects/Campaign/wncty_db/campaign",
+        "path" : "/ds/objects/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/objectsbyquery/Campaign/wncty_db/campaign",
+        "path" : "/ds/objectsbyquery/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/objectsbyquerywithassociation/Campaign/wncty_db/campaign",
+        "path" : "/ds/objectsbyquerywithassociation/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/page/Campaign/wncty_db/campaign",
+        "path" : "/ds/page/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/save/Campaign/wncty_db/campaign",
+        "path" : "/ds/save/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/saveAll/Campaign/wncty_db/campaign",
+        "path" : "/ds/saveAll/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/update/Campaign/wncty_db/campaign",
+        "path" : "/ds/update/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/updateOne/Campaign/wncty_db/campaign",
+        "path" : "/ds/updateOne/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/saveObjectWithAssociation/Campaign/wncty_db/campaign",
+        "path" : "/ds/saveObjectWithAssociation/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/saveObjectsWithAssociation/Campaign/wncty_db/campaign",
+        "path" : "/ds/saveObjectsWithAssociation/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/saveSnapshot/Campaign/wncty_db/campaign",
+        "path" : "/ds/saveSnapshot/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/snapshot/Campaign/wncty_db/campaign",
+        "path" : "/ds/snapshot/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/sqltemplate/Campaign/wncty_db/campaign",
+        "path" : "/ds/sqltemplate/Campaign/wncty_db/campaign",
+        "secure" : true
+      },
+      {
+        "location" : "/ds/objectgraph/Campaign/wncty_db/campaign",
+        "path" : "/ds/objectgraph/Campaign/wncty_db/campaign",
+        "secure" : true
+      }
+    ],
+    "tableCreateable" : true
+  }
