@@ -1,7 +1,0 @@
-{
-    "name" : "wncty_db",
-    "permitsDBCreate" : true,
-    "type" : "mysql",
-    "useDefault" : true,
-    "properties" : { }
-  }

@@ -1,0 +1,42 @@
+This file is the specification of a class "campaignNew"
+Label, "campaign"
+DB Table Name, "campaign_tbl"
+
+It has following attributes
+biginteger: id
+  Is this primary key?, true
+
+biginteger: createdAt
+
+biginteger: updatedAt
+
+boolean: deleted
+
+biginteger: deletedAt
+
+biginteger: campaign_parent_id
+
+string: campaign_title
+
+biginteger: client_plan_id
+
+biginteger: plan_library_id
+
+biginteger: user_profile_id
+
+biginteger: client_id
+
+longstring: campaign_description
+
+boolean: campaign_is_active
+
+date: campaign_start_date
+
+date: campaign_end_date
+
+date: campaign_close_date
+
+boolean: campaign_goal_location
+
+boolean: campaign_enable_cases
+
